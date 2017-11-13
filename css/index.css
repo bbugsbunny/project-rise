@@ -1,9 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
-}
-body{
-    text-align: center;
+    padding: 0;
 }
 .header {
     grid-area:header;
@@ -26,7 +23,7 @@ body{
     grid-area:footer;
     background:gray;
 }
-.container{
+.grid{
     display: grid;
     grid-template-areas:
         "header header header"
@@ -35,9 +32,9 @@ body{
         "item10 footer item12";
         grid-gap:5px;
         grid-template-columns: 1fr 4fr 1fr;
-        grid-auto-rows: minmax(auto)
+        grid-auto-rows: minmax(100px 1fr)
 }
-.container div {
+.grid div {
     background-color: #283114E;
     border:1px solid #212941;
     border-radius: 5px;
